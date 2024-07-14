@@ -1,81 +1,81 @@
 import { DiAndroid, DiTerminal, DiJava, DiHtml5 } from "react-icons/di";
-import { SiFirebase, SiGit, SiDart, SiCss3, SiMysql, SiAmazonaws,SiDjango } from "react-icons/si";
+import { SiFirebase, SiGit, SiDart, SiCss3, SiMysql, SiAmazonaws,SiDjango,SiFlask,SiPython,SiJavascript } from "react-icons/si";
+import { TbBrandKotlin,TbBrandNextjs,TbBrandCpp,TbSql } from "react-icons/tb";
 
-import { TbBrandKotlin,TbBrandNextjs } from "react-icons/tb";
 
 export const Skills = [
   {
     slug: "NextJS",
     Component: TbBrandNextjs,
     title: "NextJS",
-    Description: () => <>React framework</>,
+    Description: () => <>Intermediate</>,
   },
   {
     slug: "django",
     Component: SiDjango,
     title: "Django",
-    Description: () => <>Python-based web framework</>,
+    Description: () => <>Intermediate</>,
   },
   {
-    slug: "kotlin",
-    Component: TbBrandKotlin,
-    title: "Kotlin",
-    Description: () => <>Android apps and Lambda functions</>,
+    slug: "Flask",
+    Component:SiFlask,
+    title: "Flask",
+    Description: () => <>Basic</>,
   },
   {
-    slug: "dart",
-    Component: SiDart,
-    title: "Dart",
-    Description: () => <>Flutter apps only</>,
+    slug: "Python",
+    Component:SiPython,
+    title: "Python",
+    Description: () => <>Advanced</>,
   },
   {
-    slug: "java",
-    Component: DiJava,
-    title: "Java",
-    Description: () => <>Android apps and Lambda functions</>,
+    slug: "C++",
+    Component:TbBrandCpp,
+    title: "C++",
+    Description: () => <>Intermediate</>,
   },
-
+  {
+    slug: "javascript",
+    Component:SiJavascript,
+    title: "JavaScript",
+    Description: () => <>Intermediate</>,
+  },
   {
     slug: "html",
     Component: DiHtml5,
     title: "HTML",
-    Description: () => <>Static webpages and portfolio projects</>,
+    Description: () => <>Intermediate</>,
   },
   {
     slug: "css",
     Component: SiCss3,
     title: "CSS",
-    Description: () => <>Styling of my webpages</>,
+    Description: () => <>Intermediate</>,
   },
 
   {
     slug: "sql",
     Component: SiMysql,
     title: "MySQL",
-    Description: () => <>Storing client and user data</>,
+    Description: () => <>Intermediate</>,
   },
   {
-    slug: "aws",
-    Component: SiAmazonaws,
-    title: "AWS Lambda",
-    Description: () => <>Lambda functions for creating APIs</>,
+    slug: "sql",
+    Component: TbSql,
+    title: "SQL",
+    Description: () => <>Intermediate</>,
   },
-  {
-    slug: "terminal",
-    Component: DiTerminal,
-    title: "Bash",
-    Description: () => <>Ease of life and build scripts</>,
-  },
+
   {
     slug: "firebase",
     Component: SiFirebase,
     title: "Firebase",
-    Description: () => <>Authentication, database and analytics</>,
+    Description: () => <>Basic</>,
   },
   {
     slug: "git",
     Component: SiGit,
     title: "Git",
-    Description: () => <>Code management and open source contributions</>,
+    Description: () => <>Intermediate</>,
   },
 ];

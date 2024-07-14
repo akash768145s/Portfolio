@@ -18,15 +18,6 @@ export const projects = [
   //   id: 0,
   // },
   // {
-  //   title: 'Covid-19 Status App',
-  //   description: "COVID-19 Status is a free, open-source Android application that shows the current state of COVID-19 in India and the world. It has a beautiful, simple, fast, and responsive UI.",
-  //   image: '/images/covid.jpg',
-  //   tags: ['Java', 'XML', 'Firebase', 'Rest API'],
-  //   source: 'https://github.com/Coders-Of-XDA-OT/covid19-status-android',
-  //   visit: 'https://project.vipuljha.com/covid/',
-  //   id: 0,
-  // },
-  // {
   //   title: 'Portfolio Website',
   //   description: "This was my personal portfolio website that has all my work and project experience, including my resume. It used to be my main portfolio before deploying this current portfolio.",
   //   image: '/images/portfolio.jpg',
@@ -63,13 +54,13 @@ export const projects = [
   //   id: 3,
   // },
   {
-    title: 'CyanogenOS Apps',
-    description: "CyanogenOS 12.1 had a set of exclusive apps like a new theme engine and a new Truecaller integrated dialer. I ported it to work with CyanogenMod 13 and CM 13 based ROMs.",
-    image: '/images/capps.jpg',
-    tags: ['Java', 'Libs'],
-    source: '#',
-    visit: 'https://forum.xda-developers.com/t/c-apps-v2-unofficial-6-0-x-cyanogen-os-capps-v2-for-cm13-and-cm13-based-roms.3254865/',
-    id: 3,
+    title: 'Student Grade Analysis',
+    description: "Enhanced data-driven decision-making and academic performance tracking by analyzing pass/fail rates, calculating CGPA/GPA/ranks, and integrating Excel data into the web app.",
+    image: '/images/snapit.jpg',
+    tags: ['NextJs', 'ReactJs','Chart.Js','Firebase'],
+    source: 'https://github.com/akash768145s/Result-Analysis',
+    visit: 'https://github.com/akash768145s/Result-Analysis',
+    id: 0,
   },
 
 ];
