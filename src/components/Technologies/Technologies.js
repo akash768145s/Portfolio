@@ -4,12 +4,11 @@ import { List, ListContainer, ListItem, ListParagraph, ListTitle, } from "./Tech
 import { Skills } from './Skills'
 
 const Technologies = () => (
-  <Section id="skills">
-    <SectionDivider divider />
+  <><Section id="skills">
     <SectionTitle>Skills</SectionTitle>
-    <SectionText>
+    {/* <SectionText>
     I have extensive experience working with a variety of technologies as a developer. I've developed and maintained multiple projects using these technologies, and I'm always eager to learn more.
-    </SectionText>
+    </SectionText> */}
     <List>
       {Skills.map((Skill) => (
         <ListItem key={Skill.slug}>
@@ -25,8 +24,7 @@ const Technologies = () => (
         </ListItem>
       ))}
     </List>
-    <SectionDivider colorAlt />
-  </Section>
+  </Section><SectionDivider colorAlt /></>
 );
 
 export default Technologies;

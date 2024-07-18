@@ -20,23 +20,29 @@ import {
 import { projects } from "../../constants/constants";
 
 const Projects = () => (
-  <Section id="projects">
-    <SectionTitle main>Projects</SectionTitle>
-    <GridContainer>
-      {projects.map((p, i) => {
-        return (
+  <>
+    <Section id="projects">
+      <SectionTitle main>Projects</SectionTitle>
+      <GridContainer>
+        {projects.map((p, i) => (
           <BlogCard key={i}>
             <Img src={p.image} />
             <HeaderThree title={p.title}>{p.title}</HeaderThree>
             <Hr />
-            <CardInfo className="card-info">{p.description}</CardInfo>
+            <CardInfo className="card-info">
+              <ul>
+                {p.description.split('\n').map((line, index) => (
+                  <li key={index}>{line}</li>
+                ))}
+              </ul>
+            </CardInfo>
             <div>
               <TitleContent>Tech Stack</TitleContent>
               <Hr />
               <TagList>
-                {p.tags.map((t, i) => {
-                  return <Tag key={i}>{t}</Tag>;
-                })}
+                {p.tags.map((t, i) => (
+                  <Tag key={i}>{t}</Tag>
+                ))}
               </TagList>
             </div>
             <UtilityList>
@@ -44,11 +50,11 @@ const Projects = () => (
               <ExternalLinks href={p.source}>Source Code</ExternalLinks>
             </UtilityList>
           </BlogCard>
-        );
-      })}
-    </GridContainer>
-    <SectionDivider />
-  </Section>
+        ))}
+      </GridContainer>
+    </Section>
+    <SectionDivider colorAlt />
+  </>
 );
 
 export default Projects;

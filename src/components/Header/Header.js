@@ -34,7 +34,7 @@ const Header = () => (
         </Link>
       </li>
       <li>
-        <Link href="#projects" legacyBehavior>
+        <Link href="#" legacyBehavior>
           <NavLink>Experience</NavLink>
         </Link>
       </li>
@@ -57,7 +57,7 @@ const Header = () => (
       <SocialIcons href="https://www.linkedin.com/in/akash-sakthimurugan-352b26236/">
         <AiFillLinkedin size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.instagram.com/lordarcadius">
+      <SocialIcons href="https://www.instagram.com/akash__2705s">
         <AiFillInstagram size="3rem" />
       </SocialIcons>
     </Div3>
