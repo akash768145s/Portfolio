@@ -9,17 +9,51 @@ export const projects = [
     visit: "https://drive.google.com/file/d/1ElZVuhOcLQMqyrZNwYERAhI5vPuRUV1M/view?usp=sharing",
     id: 0,
   },
-  // {
-  //   title: "Blood Bank",
-  //   description:
-  //     "Blood bank organizes donations and donor information.Users can sign up,donate blood,search for donors and manage profiles.The system tracks blood type,donation amount and contact info.Administrators manage the inventory and users receive donation request notifications.",
-  //   image: "/images/Blood Bank.png",
-  //   tags: ["Flask", "SQLite", "HTTP Methods", "HTML"],
-  //   source: "https://github.com/akash768145s/Result-Analysis",
-  //   visit:
-  //     "https://drive.google.com/file/d/1SbjPazAAF8xRLBxsKdRUd3_G0X5BN04R/view?usp=sharing",
-  //   id: 0,
-  // },
+  {
+    title: "Blood Bank",
+    description:
+      "Blood bank organizes donations and donor information.\nUsers can sign up,donate blood,search for donors and manage profiles.\nThe system tracks blood type,donation amount and contact info.\nAdministrators manage the inventory and users receive donation request notifications.",
+    image: "/images/Blood Bank.png",
+    tags: ["Flask", "SQLite", "HTTP Methods", "HTML"],
+    source: "https://github.com/akash768145s/Result-Analysis",
+    visit:
+      "https://drive.google.com/file/d/1SbjPazAAF8xRLBxsKdRUd3_G0X5BN04R/view?usp=sharing",
+    id: 1,
+  },
+  {
+    title: "Blood Bank",
+    description:
+      "Blood bank organizes donations and donor information.\nUsers can sign up,donate blood,search for donors and manage profiles.\nThe system tracks blood type,donation amount and contact info.\nAdministrators manage the inventory and users receive donation request notifications.",
+    image: "/images/Blood Bank.png",
+    tags: ["Flask", "SQLite", "HTTP Methods", "HTML"],
+    source: "https://github.com/akash768145s/Result-Analysis",
+    visit:
+      "https://drive.google.com/file/d/1SbjPazAAF8xRLBxsKdRUd3_G0X5BN04R/view?usp=sharing",
+    id: 1,
+  },
+  {
+    title: "Blood Bank",
+    description:
+      "Blood bank organizes donations and donor information.\nUsers can sign up,donate blood,search for donors and manage profiles.\nThe system tracks blood type,donation amount and contact info.\nAdministrators manage the inventory and users receive donation request notifications.",
+    image: "/images/Blood Bank.png",
+    tags: ["Flask", "SQLite", "HTTP Methods", "HTML"],
+    source: "https://github.com/akash768145s/Result-Analysis",
+    visit:
+      "https://drive.google.com/file/d/1SbjPazAAF8xRLBxsKdRUd3_G0X5BN04R/view?usp=sharing",
+    id: 1,
+  },
+  {
+    title: "Blood Bank",
+    description:
+      "Blood bank organizes donations and donor information.\nUsers can sign up,donate blood,search for donors and manage profiles.\nThe system tracks blood type,donation amount and contact info.\nAdministrators manage the inventory and users receive donation request notifications.",
+    image: "/images/Blood Bank.png",
+    tags: ["Flask", "SQLite", "HTTP Methods", "HTML"],
+    source: "https://github.com/akash768145s/Result-Analysis",
+    visit:
+      "https://drive.google.com/file/d/1SbjPazAAF8xRLBxsKdRUd3_G0X5BN04R/view?usp=sharing",
+    id: 1,
+  },
+  
   // {
   //   title: "Student Grade Analysis",
   //   description:[

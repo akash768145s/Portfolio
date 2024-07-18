@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import {SectionDivider } from "../../styles/GlobalComponents";
+import {SectionText,SectionDivider } from "../../styles/GlobalComponents";
 const SectionTitle = styled.h2`
   font-weight: 800;
   font-size: ${(props) => (props.main ? "65px" : "56px")};
@@ -160,7 +160,9 @@ const Experience = () => (
     >
       <SectionTitle main>Experience</SectionTitle>
     </div>
-
+    <SectionText>
+    As a web developer, I have honed my front-end skills using React.js and Next.js, enhancing UI/UX and web performance. I have led a frontend team, ensuring code quality and seamless API integration. Additionally, I have contributed to web projects by fixing bugs and implementing new features.
+    </SectionText>
     <section>
       <TimelineContainer>
         <Container>

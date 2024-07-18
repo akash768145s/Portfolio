@@ -370,8 +370,8 @@ const BackgroundAnimation = () => (
     <div className="profile-image">
       <Image
         src="/images/profile-pic.png"
-        width={400} // Required width property
-        height={400} // Required height property
+        width={350} // Required width property
+        height={350} // Required height property
         alt="Profile"
         style={{
           position: "absolute",
