@@ -1,7 +1,7 @@
-import { DiAndroid, DiTerminal, DiJava, DiHtml5 } from "react-icons/di";
-import { SiFirebase, SiGit, SiDart, SiCss3, SiMysql, SiAmazonaws,SiDjango,SiFlask,SiPython,SiJavascript } from "react-icons/si";
-import { TbBrandKotlin,TbBrandNextjs,TbBrandCpp,TbSql } from "react-icons/tb";
-
+import {DiHtml5 } from "react-icons/di";
+import { SiFirebase, SiGit, SiCss3, SiMysql,SiDjango,SiFlask,SiPython,SiJavascript,SiMongodb,SiExpress,SiTypescript } from "react-icons/si";
+import { TbBrandNextjs,TbBrandCpp,TbSql } from "react-icons/tb";
+import { FaReact,FaNode} from "react-icons/fa";
 
 export const Skills = [
   {
@@ -21,6 +21,31 @@ export const Skills = [
     Component:SiFlask,
     title: "Flask",
     Description: () => <>Basic</>,
+  },
+  {
+    slug: "ReactJS",
+    Component:FaReact,
+    title: "ReactJS",
+    Description: () => <>Intermediate</>,
+  },
+  {
+    slug: "Typescript",
+    Component:SiTypescript,
+    title: "Typescript",
+    Description: () => <>Beginner</>,
+  },
+  
+  {
+    slug: "NodeJS",
+    Component:FaNode,
+    title: "NodeJS",
+    Description: () => <>Basic</>,
+  },
+  {
+    slug: "ExpressJS",
+    Component:SiExpress,
+    title: "ExpressJS",
+    Description: () => <>Intermediate</>,
   },
   {
     slug: "Python",
@@ -70,6 +95,12 @@ export const Skills = [
     slug: "firebase",
     Component: SiFirebase,
     title: "Firebase",
+    Description: () => <>Basic</>,
+  },
+    {
+    slug: "MongoDB",
+    Component: SiMongodb,
+    title: "MongoDB",
     Description: () => <>Basic</>,
   },
   {

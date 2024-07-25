@@ -1,6 +1,8 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import {SectionText,SectionDivider } from "../../styles/GlobalComponents";
+import Image from "next/image";
+import { SectionText, SectionDivider } from "../../styles/GlobalComponents";
+
 const SectionTitle = styled.h2`
   font-weight: 800;
   font-size: ${(props) => (props.main ? "65px" : "56px")};
@@ -16,7 +18,7 @@ const SectionTitle = styled.h2`
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
-  text-align: center; /* Center align text */
+  text-align: center;
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? "56px" : "48px")};
@@ -34,10 +36,9 @@ const SectionTitle = styled.h2`
   }
 `;
 
-// Define keyframes for animations
 const moveDown = keyframes`
   0% {
-    opacity: 1;
+    opacity: 0;
     transform: translateY(-30px);
   }
   100% {
@@ -46,20 +47,19 @@ const moveDown = keyframes`
   }
 `;
 
-// Styled components for elements
 const TimelineContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 60px auto;
   background-color: #0f1624;
-  padding: 20px;
+  padding: 40px 20px;
   border-radius: 8px;
 `;
 
 const Container = styled.div`
-  padding: 10px;
+  padding: 20px;
   width: calc(50% - 20px);
   margin-bottom: 40px;
   position: relative;
@@ -84,17 +84,19 @@ const Container = styled.div`
 const TextBox = styled.div`
   padding: 20px;
   background: #1c2333;
-  border-radius: 6px;
-  font-size: 15px;
+  border-radius: 8px;
+  font-size: 16px;
   color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   @media screen and (max-width: 600px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   small {
     display: block;
     margin-bottom: 10px;
+    color: #a8a8a8;
   }
 `;
 
@@ -115,12 +117,6 @@ const Bullet = styled.span`
 
 const BulletText = styled.span`
   flex: 1;
-`;
-
-const Image = styled.img`
-  width: 60px;
-  border-radius: 50%;
-  margin-right: 10px;
 `;
 
 const Arrow = styled.span`
@@ -151,48 +147,47 @@ const ExperienceHeading = styled.h1`
   text-align: center;
 `;
 
-// React Component
 const Experience = () => (
   <>
     <div
       className="text-center mb-14"
       style={{ marginTop: "20px", marginBottom: "10px" }}
     >
-      <SectionTitle main>Experience</SectionTitle>
+      <SectionTitle main id="experience">
+        Experience
+      </SectionTitle>
     </div>
-    <SectionText>
-    As a web developer, I have honed my front-end skills using React.js and Next.js, enhancing UI/UX and web performance. I have led a frontend team, ensuring code quality and seamless API integration. Additionally, I have contributed to web projects by fixing bugs and implementing new features.
+    <SectionText
+      style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto" }}
+    >
+      As a web developer, I have honed my front-end skills with React.js and
+      Next.js, optimizing UI/UX and web performance. Leading a frontend team, I
+      ensured code quality and seamless API integration. Additionally, I
+      contributed to web projects by debugging and implementing new features.
     </SectionText>
-    <section>
+    <section style={{ marginTop: "40px" }}>
       <TimelineContainer>
         <Container>
           <TextBox>
-            <Image src="images/ak.png" alt="AK Technologies Logo" />
-            <h2>AK Technologies</h2>
+            <Image
+              src="/images/ak.png"
+              alt="AK Technologies Logo"
+              width={60}
+              height={60}
+            />
+            <h2>Inno3dTech</h2>
             <h3>(Role: Web Dev Intern)</h3>
             <small>July 2024-Present</small>
             <BulletPoint>
               <Bullet />
               <BulletText>
-                Worked on front-end development using React.js and Next.js.
+                Currently working on a Project for Inno3dTech team
               </BulletText>
             </BulletPoint>
             <BulletPoint>
               <Bullet />
               <BulletText>
-                Implemented responsive designs with HTML, CSS, and JavaScript.
-              </BulletText>
-            </BulletPoint>
-            <BulletPoint>
-              <Bullet />
-              <BulletText>
-                Collaborated with the design team to improve UI/UX.
-              </BulletText>
-            </BulletPoint>
-            <BulletPoint>
-              <Bullet />
-              <BulletText>
-                Assisted in optimizing web performance and SEO.
+                Paid Internship with Stipend for the Project
               </BulletText>
             </BulletPoint>
             <LeftArrow />
@@ -200,30 +195,33 @@ const Experience = () => (
         </Container>
         <Container>
           <TextBox>
-            <Image src="images/dnyx.png" alt="DNYX Logo" />
+            <Image
+              src="/images/dnyx.png"
+              alt="DNYX Logo"
+              width={60}
+              height={60}
+            />
             <h2>DNYX</h2>
             <h3>(Role: Frontend Team Lead)</h3>
             <small>July 2024-Present</small>
             <BulletPoint>
               <Bullet />
               <BulletText>
-                Led the front-end development team for multiple projects.
-              </BulletText>
-            </BulletPoint>
-            <BulletPoint>
-              <Bullet />
-              <BulletText>Ensured code quality and best practices.</BulletText>
-            </BulletPoint>
-            <BulletPoint>
-              <Bullet />
-              <BulletText>
-                Conducted code reviews and mentoring sessions.
+                Currently Leading the Frontend Team for multiple client projects
               </BulletText>
             </BulletPoint>
             <BulletPoint>
               <Bullet />
               <BulletText>
-                Coordinated with back-end developers for API integration.
+                Mentoring junior developers to enhance their skills and
+                effectively contribute to company client projects.
+              </BulletText>
+            </BulletPoint>
+            <BulletPoint>
+              <Bullet />
+              <BulletText>
+                Coordinating with back-end developers and UI/UX Team for Quality
+                Projects.
               </BulletText>
             </BulletPoint>
             <RightArrow />
@@ -231,28 +229,42 @@ const Experience = () => (
         </Container>
         <Container>
           <TextBox>
-            <Image src="images/digenie.png" alt="Digenie Logo" />
+            <Image
+              src="/images/digenie.png"
+              alt="Digenie Logo"
+              width={60}
+              height={60}
+            />
             <h2>Digenie</h2>
             <h3>(Role: Web Dev Intern)</h3>
             <small>April 2024-June 2024</small>
             <BulletPoint>
               <Bullet />
-              <BulletText>Developed web components using React.js.</BulletText>
-            </BulletPoint>
-            <BulletPoint>
-              <Bullet />
               <BulletText>
-                Participated in daily stand-ups and sprint planning.
+                Utilized the Next.js framework to build and maintain web
+                applications, ensuring high performance and scalability.
               </BulletText>
             </BulletPoint>
             <BulletPoint>
               <Bullet />
-              <BulletText>Fixed bugs and implemented new features.</BulletText>
+              <BulletText>
+                Worked on 3 client projects, including Sri Hospitals,Digenie and
+                Spice N Oil delivering high-quality websites hosted via Netlify,
+                Vercel, and Hostinger.
+              </BulletText>
             </BulletPoint>
             <BulletPoint>
               <Bullet />
               <BulletText>
-                Worked closely with senior developers for guidance.
+                Created comprehensive style guides for client sites to ensure
+                consistency and maintainability.
+              </BulletText>
+            </BulletPoint>
+            <BulletPoint>
+              <Bullet />
+              <BulletText>
+                Received a stipend for the Internship, acknowledging the value
+                and impact of my contributions.
               </BulletText>
             </BulletPoint>
             <LeftArrow />

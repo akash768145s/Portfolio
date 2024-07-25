@@ -188,7 +188,7 @@ const ContactSection = () => {
   };
 
   return (
-    <Section id="contact-form">
+    <Section id="contact">
       <div className="text-center mb-14">
         <SectionTitle>Contact Me</SectionTitle>
         <SectionText>
