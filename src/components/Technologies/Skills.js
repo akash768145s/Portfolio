@@ -1,7 +1,8 @@
 import {DiHtml5 } from "react-icons/di";
 import { SiFirebase, SiGit, SiCss3, SiMysql,SiDjango,SiFlask,SiPython,SiJavascript,SiMongodb,SiExpress,SiTypescript } from "react-icons/si";
-import { TbBrandNextjs,TbBrandCpp,TbSql } from "react-icons/tb";
+import { TbBrandNextjs,TbBrandCpp,TbSql,TbBrandGolang } from "react-icons/tb";
 import { FaReact,FaNode} from "react-icons/fa";
+import { IoLogoDocker } from "react-icons/io5";
 
 export const Skills = [
   {
@@ -58,6 +59,18 @@ export const Skills = [
     Component:TbBrandCpp,
     title: "C++",
     Description: () => <>Intermediate</>,
+  },
+  {
+    slug: "golang",
+    Component:TbBrandGolang,
+    title: "Golang",
+    Description: () => <>Intermediate</>,
+  },
+  {
+    slug: "docker",
+    Component:IoLogoDocker,
+    title: "Docker",
+    Description: () => <>Beginner</>,
   },
   {
     slug: "javascript",
