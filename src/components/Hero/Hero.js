@@ -12,15 +12,15 @@ const Hero = (props) => (
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Hey there,
+          Hey there!
         </SectionTitle>
         <SectionText>
-          I'm Akash SakthiMurugan,Currently leading front-end development at DNYX with a
-          focus on Next.js and React.js to build dynamic web applications. My
-          experience as an intern at Digenie Company has shaped my skills, and
-          now I mentor interns at DNYX. Pursuing a B.Tech at SSN College of
-          Engineering, I'm strengthening my problem-solving skills and aiming to
-          transition to a data engineer in the near future.
+          I'm Akash SakthiMurugan, passionate about building impactful digital
+          experiences. With experience mentoring interns at DNYX and developing
+          educational games to promote Tamil learning, I strive to blend
+          technology with creativity. Currently pursuing a B.Tech in Information
+          Technology at SSN, I am expanding my skills into Blockchain
+          Dev to drive future innovations.
         </SectionText>
         <Button
           className="px-4 py-2 mt-4 text-white bg-blue-500 rounded hover:bg-blue-700 sm:px-2 sm:py-1"

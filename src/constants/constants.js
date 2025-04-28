@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Sell it Dude!",
     description:
-      "OCreated a marketplace platform for college students to trade items seamlessly. Implemented secure authentication and dynamic product listings for better engagement and transaction efficiency. Promoted sustainability through eco-friendly practices and responsible exchange of goods.",
+      "Created a marketplace platform for college students to trade items seamlessly. Implemented secure authentication and dynamic product listings for better engagement and transaction efficiency. Promoted sustainability through eco-friendly practices and responsible exchange of goods.",
     image: "/images/sid.png",
     tags: ["NextJs", "ReactJs", "ExpressJs", "MongoDB"],
     source: "https://github.com/akash768145s/sid",
