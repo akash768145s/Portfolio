@@ -47,7 +47,7 @@ import { IoLogoDocker } from "react-icons/io5";
 const Technologies = () => (
   <Section id="technologies">
     <SectionDivider />
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionTitle>Skills</SectionTitle>
     <SectionText>
       <SectionText>
         I work with web, cloud, and blockchain technologies, building real-world

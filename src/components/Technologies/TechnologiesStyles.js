@@ -57,14 +57,14 @@ export const TechCard = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 140px;
     padding: 1rem;
   }
 
   @media (max-width: 480px) {
-    height: 90px;
-    width: 90px;
+    height: 130px;
+    width: 130px;
     padding: 0.8rem;
   }
 `;
@@ -75,11 +75,11 @@ export const TechIcon = styled.div`
   margin-bottom: 0.4rem;
 
   @media (max-width: 768px) {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 
   @media (max-width: 480px) {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 `;
 
@@ -121,10 +121,10 @@ export const TechName = styled.h3`
   font-weight: 500;
 
   @media (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   @media (max-width: 480px) {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 `;
