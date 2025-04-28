@@ -1,138 +1,130 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const ImageContainer = styled.div`
-  text-align: center;
-  background-image: radial-gradient(50% 50% at 50% 50%, rgba(79, 108, 176, 0.25) 53.8%, rgba(79, 108, 176, 0) 100%);
-  width: 100%;
-  padding: 60px;
-  margin-top: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  @media ${props => props.theme.breakpoints.lg} {
-    background-image: none;
-    padding: 0;
-    margin-top: 40px;
-  }
-  @media ${props => props.theme.breakpoints.md} {
-    background-image: none;
-    padding: 0;
-    margin-top: 16px;
-  }
-`
-
-export const MainImage = styled.img`
-  width: 100%;
-`
-
-export const List = styled.ul`
-  list-style-type: none;
+// Grid Container (VERTICAL scroll normal)
+export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin-bottom: 4rem;
-  
-  @media ${props => props.theme.breakpoints.lg}{
-    margin: 64px 0;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0 3rem;
+  justify-items: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on tablet */
+    gap: 1rem;
+    padding: 0 1rem;
   }
 
-  @media ${props => props.theme.breakpoints.md}{
-    margin: 64px 0;
-    gap: 24px
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on small mobile */
+    gap: 0.8rem;
+    padding: 0 0.5rem;
   }
-  
-  @media ${props => props.theme.breakpoints.sm}{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-  }
+`;
 
-  @media ${props => props.theme.breakpoints.xs}{
-    display: flex;
-    flex-direction: column;
-  }
-`
-
-export const ListContainer = styled.div`
+// Tech Card
+export const TechCard = styled.div`
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.08)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  padding: 1.2rem 0.8rem;
+  text-align: center;
+  transition: 0.4s ease all;
+  height: 110px;
+  width: 110px;
   display: flex;
   flex-direction: column;
-  margin-left: 18px;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 
-  @media ${props => props.theme.breakpoints.sm}{
-    display: flex;
-    margin-left: 18px;
+  &:hover {
+    transform: translateY(-6px) scale(1.05);
+    background: linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.18),
+      rgba(255, 255, 255, 0.12)
+    );
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.25);
   }
-`
 
-export const ListTitle = styled.h4`
+  @media (max-width: 768px) {
+    height: 100px;
+    width: 100px;
+    padding: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    height: 90px;
+    width: 90px;
+    padding: 0.8rem;
+  }
+`;
+
+// Tech Icon inside Card
+export const TechIcon = styled.div`
+  font-size: 2.8rem;
+  margin-bottom: 0.4rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.4rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+`;
+
+// Section Heading
+export const SectionHeading = styled.h2`
   font-weight: 700;
-  font-size: 28px;
-  line-height: 32px;
-  letter-spacing: 0.02em;
-  color: #FFFFFF;
-  margin-bottom: 8px;
+  font-size: 40px;
+  line-height: 48px;
+  width: max-content;
+  max-width: 100%;
+  background: linear-gradient(
+    121.57deg,
+    #ffffff 18.77%,
+    rgba(255, 255, 255, 0.7) 60.15%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 3rem auto 2rem auto;
+  text-align: center;
+  padding: 0;
 
-@media ${props => props.theme.breakpoints.md}{
-  font-size: 24px;
-  line-height: 28px;
-}
-
-@media ${props => props.theme.breakpoints.sm}{
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  margin-bottom: 4px;
-}
-`
-
-export const ListParagraph = styled.div`
-  font-size: 18px;
-  line-height: 30px;
-  color: rgba(255, 255, 255, 0.75);
-
-  @media ${props => props.theme.breakpoints.md}{
-    font-size: 16px;
-    line-height: 28px;
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 2rem auto 1.5rem auto;
   }
 
-  @media ${props => props.theme.breakpoints.sm}{
-    font-size: 14px;
-    line-height: 22px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 28px;
+    line-height: 36px;
+    margin: 1.5rem auto 1rem auto;
   }
-`
+`;
 
-export const ListItem = styled.li`
-  max-width: 320px;
-  display: flex;
-  flex-direction: row;
+// Tech Name
+export const TechName = styled.h3`
+  font-size: 1.6rem;
+  color: #d1d5db;
+  font-weight: 500;
 
-@media ${props => props.theme.breakpoints.md}{
-  max-width: 203px;
-}
-
-@media ${props => props.theme.breakpoints.sm}{
-  margin-bottom: 14px;
-  max-width: 320px;
-}
-`
-
-export const ListIcon = styled.img`
-  display: block;
-  width: 48px;
-  height: 48px;
-  margin-bottom: 10px;
-  
-  @media ${props => props.theme.breakpoints.md}{
-    width: 40px;
-    height: 40px;
-    margin-bottom: 8px;
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
   }
 
-  @media ${props => props.theme.breakpoints.sm}{
-    width: 32px;
-    height: 32px;
-    margin-bottom: 0px;
+  @media (max-width: 480px) {
+    font-size: 1rem;
   }
-`
+`;
