@@ -36,7 +36,6 @@ import {
 } from "react-icons/si";
 import {
   TbBrandNextjs,
-  TbBrandCpp,
   TbBrandGolang,
   TbBrandReactNative,
 } from "react-icons/tb";
@@ -81,12 +80,7 @@ const Technologies = () => (
         </TechIcon>
         <TechName>GoLang</TechName>
       </TechCard>
-      <TechCard>
-        <TechIcon>
-          <TbBrandCpp />
-        </TechIcon>
-        <TechName>C++</TechName>
-      </TechCard>
+
     </GridContainer>
     <SectionHeading>Web Dev & Frameworks</SectionHeading>
     <GridContainer>

@@ -1,119 +1,146 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+
+/*
+ * Color Guide:
+ * Primary Background: #0F1624 (dark blue background)
+ * Secondary Background: #162340 (lighter blue for cards)
+ * Accent: #FFB800 (golden yellow for highlights)
+ * Text Primary: #FFFFFF (white for main text)
+ * Text Secondary: #B1C5E2 (light blue for secondary text)
+ * Button Primary: #3366FF (bright blue)
+ * Button Secondary: #FF3366 (pink/red)
+ * Card Shadow: rgba(0, 0, 0, 0.2)
+ */
 
 export const Img = styled.img`
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 200px;
   object-fit: cover;
-  overflow: hidden;
-`
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.5s ease;
+`;
 
 export const GridContainer = styled.section`
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-padding-top: 3rem;
-padding-bottom: 3rem;
-place-items: center;
-column-gap: 1rem;
-row-gap: 3rem;
-@media ${(props) => props.theme.breakpoints.sm} {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2.5rem;
+  padding: 3rem 0;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+`;
+
+export const BlogCard = styled.div`
+  background: #162340;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  padding-bottom: 1.5rem;
-}
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
 
-`
-export const BlogCard = styled.div`
-  border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
-  text-align: center;
-  width: 400px;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+
+    ${Img} {
+      transform: scale(1.05);
+    }
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
 `;
-export const TitleContent = styled.div`
-  text-align: center;
-  z-index: 20;
-  width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 0.7em;
-  color: #9cc9e3;
-  font-size: 1.8rem;
 
+export const TitleContent = styled.div`
+  color: #b1c5e2;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  padding: 0 1.5rem;
 `;
 
-
 export const HeaderThree = styled.h3`
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: #9cc9e3;
-  padding: .5rem 0;
-  margin-top: 1rem;
-  font-size: ${(props) => props.title ? '3rem' : '2rem'};
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 1rem 1.5rem 0.5rem;
+  font-size: ${(props) => (props.title ? "2.4rem" : "2rem")};
 `;
 
 export const Hr = styled.hr`
   width: 50px;
   height: 3px;
-  margin: 8px auto;
+  margin: 0.5rem 1.5rem 1rem;
   border: 0;
-  background: #d0bb57;
+  background: #ffb800;
 `;
-
-export const Intro = styled.div`
-  width: 170px;
-  margin: 0 auto;
-  color: #dce3e7;
-  font-family: 'Droid Serif', serif;
-  font-size: 13px;
-  font-style: italic;
-  line-height: 18px;
-`;
-
 
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 50px;
-  color: #e4e6e7;
-  font-style: 2rem;
-  line-height: 24px;
-  text-align: justify;
-  margin-top: 2rem;
+  padding: 0 1.5rem;
+  color: #b1c5e2;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
-  
-}
-`;
-
-
-export const UtilityList = styled.ul`
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  margin: 2.5rem 0;
-`;
-
-export const ExternalLinks = styled.a`
-color:#d4c0c0;
-font-size: 1.6rem;
-padding:1rem 1.5rem;
-background: #6b3030;
-border-radius: 15px;
-transition: 0.5s;
-&:hover{
-  background: #801414;
-
-}
+    padding: 0 1.5rem;
+  }
 `;
 
 export const TagList = styled.ul`
-display: flex;
-justify-content: space-around;
-padding: 2rem;
-`
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 1.5rem;
+  gap: 0.8rem;
+`;
+
 export const Tag = styled.li`
-color: #d8bfbf;
-font-size: 1.5rem;
-`
+  color: #ffffff;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+`;
+
+export const UtilityList = styled.ul`
+  list-style-type: none;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: auto;
+`;
+
+export const ExternalLinks = styled.a`
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding: 0.8rem 1.2rem;
+  background: ${(props) => (props.source ? "#FF3366" : "#3366FF")};
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background: ${(props) => (props.source ? "#E62D5B" : "#2855D6")};
+  }
+`;
