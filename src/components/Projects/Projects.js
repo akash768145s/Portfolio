@@ -1,4 +1,5 @@
 import React from "react";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 import {
   BlogCard,
@@ -51,7 +52,7 @@ const Projects = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Preview
+                <FiExternalLink /> Live Preview
               </ExternalLinks>
               <ExternalLinks
                 href={project.source}
@@ -59,7 +60,7 @@ const Projects = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Source Code
+                <FiGithub /> Source Code
               </ExternalLinks>
             </UtilityList>
           </BlogCard>

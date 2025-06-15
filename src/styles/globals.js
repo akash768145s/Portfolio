@@ -4,6 +4,41 @@ import { normalize } from 'styled-normalize';
 const GlobalStyles = createGlobalStyle`
   ${normalize};
 
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+
   * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
 
   }
   body {
-    font-family: ${props => props.theme.fonts.main};
+    font-family: 'Satoshi', sans-serif;
     font-size: 1.6rem;
     background: ${props => props.theme.colors.background1};
     color: ${props => props.theme.colors.primary1};
@@ -23,7 +58,7 @@ const GlobalStyles = createGlobalStyle`
 
   }
   h1,h2,h3,h4,h5,h6,button {
-    font-family: ${props => props.theme.fonts.title};
+    font-family: 'Satoshi', sans-serif;
   }
   a {
     text-decoration: none;

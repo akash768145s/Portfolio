@@ -136,7 +136,13 @@ export const ExternalLinks = styled.a`
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   font-weight: 600;
+
+  svg {
+    font-size: 1.6rem;
+    margin-right: 8px;
+  }
 
   &:hover {
     transform: translateY(-2px);

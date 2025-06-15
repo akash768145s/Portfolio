@@ -1,4 +1,15 @@
 export const projects = [
+    {
+    title: "Pictogen",
+    description:
+      "Accessibility-focused web application that converts text, speech, and images into simplified pictograms, creating visual communication aids for people with cognitive or language disabilities.",
+    image: "/images/pictogen.png",
+    tags: ["Vite","FastAPI","Firebase Auth","TensorFlow"],
+    source: "https://github.com/akash768145s/PictGen",
+    visit:
+      "https://picto-gen.vercel.app/",
+    id: 1,
+  },
   {
     title: "Sell it Dude!",
     description:
@@ -8,7 +19,7 @@ export const projects = [
     source: "https://github.com/akash768145s/sid",
     visit:
       "https://drive.google.com/file/d/1IlPL-jltEqBwFz_EYEcMiXcFZs7iGYXh/view?usp=sharing",
-    id: 0,
+    id: 1,
   },
   {
     title: "EduGuage",
@@ -19,7 +30,7 @@ export const projects = [
     source: "https://github.com/akash768145s/Result-Analysis",
     visit:
       "https://drive.google.com/file/d/1ElZVuhOcLQMqyrZNwYERAhI5vPuRUV1M/view?usp=sharing",
-    id: 0,
+    id: 2,
   },
   {
     title: "Stay Savvy",
@@ -30,7 +41,7 @@ export const projects = [
     source: "https://github.com/akash768145s/stay-stavy.git",
     visit:
       "https://drive.google.com/file/d/1wzOAeHS6oBQ76QvwNjPGZKztTZtKqPUO/view?usp=sharing",
-    id: 1,
+    id: 3,
   },
 
   {
@@ -42,7 +53,7 @@ export const projects = [
     source: "https://github.com/akash768145s/Result-Analysis",
     visit:
       "https://drive.google.com/file/d/1SbjPazAAF8xRLBxsKdRUd3_G0X5BN04R/view?usp=sharing",
-    id: 2,
+    id: 4,
   },
   {
     title: "Beta(Ai ChatBot)",
@@ -53,6 +64,6 @@ export const projects = [
     source: "https://github.com/shanjay-athithya/Beta",
     visit:
       "https://drive.google.com/file/d/1hQLU7OiPbvkvN9fIKzr80ID9SCy3Anjc/view?usp=sharing",
-    id: 3,
+    id: 5,
   },
 ];
