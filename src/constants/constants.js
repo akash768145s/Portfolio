@@ -1,14 +1,34 @@
 export const projects = [
-    {
+  {
+    title: "HashiraSwap",
+    description:
+      "Decentralized exchange (DEX) enabling real-time ERC-20 token swaps using Uniswap V2 smart contracts with MetaMask integration. Features Ethereum network validation, Web3 state management, and tested on a forked Ethereum network.",
+    image: "/images/hashirasw.png",
+    tags: ["Next.js", "React.js", "Web3.js", "Ethereum", "Uniswap V2"],
+    source: "https://github.com/akash768145s/HashiraSwap",
+    visit: "https://drive.google.com/file/d/your_demo_video_id/view?usp=sharing",
+    id: 1
+  },
+  {
     title: "Pictogen",
     description:
       "Accessibility-focused web application that converts text, speech, and images into simplified pictograms, creating visual communication aids for people with cognitive or language disabilities.",
     image: "/images/pictogen.png",
-    tags: ["Vite","FastAPI","Firebase Auth","TensorFlow"],
+    tags: ["Vite", "FastAPI", "Firebase Auth", "TensorFlow"],
     source: "https://github.com/akash768145s/PictGen",
     visit:
-      "https://picto-gen.vercel.app/",
+      "https://drive.google.com/file/d/1SiAYo7Zc0wufn5cCc0i-5in8yGnGcXDD/view?usp=sharing",
     id: 1,
+  },
+  {
+    title: "MoodSync",
+    description:
+      "Developed an emotion-based music player that uses CNN for real-time facial emotion and age detection with TensorFlow.js and Face.js, integrating the Spotify API to generate music recommendations. The application features a minimal UI with camera-based emotion recognition and multilingual support.",
+    image: "/images/moodsync.png",
+    tags: ["React.js", "TensorFlow.js", "Spotify API", "MongoDB"],
+    source: "https://github.com/akash768145s/Mood-Sync2",
+    visit: "https://mood-sync2.vercel.app/",  // Add a demo or video link here if available
+    id: 2
   },
   {
     title: "Sell it Dude!",
