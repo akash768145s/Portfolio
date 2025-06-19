@@ -6,8 +6,20 @@ export const projects = [
     image: "/images/hashirasw.png",
     tags: ["Next.js", "React.js", "Web3.js", "Ethereum", "Uniswap V2"],
     source: "https://github.com/akash768145s/HashiraSwap",
-    visit: "https://drive.google.com/file/d/your_demo_video_id/view?usp=sharing",
+    visit: "https://drive.google.com/file/d/1fmKc7UjQQR_HuWQFwa7PW3qEB0qNfUmf/view?usp=sharing",
     id: 1
+  },
+  {
+    title: "Sell it Dude!",
+    description:
+      "Created a marketplace platform for college students to trade items seamlessly. Implemented secure authentication and dynamic product listings for better engagement and transaction efficiency. Promoted sustainability through eco-friendly practices and responsible exchange of goods.",
+    image: "/images/sid.png",
+    tags: ["NextJs", "ReactJs", "MongoDB", "NextAPI Routes"],
+    source: "https://github.com/akash768145s/Sell-IT-Dude",
+    visit:
+      "https://drive.google.com/file/d/1xOxoFzg6pNnJCilJwMRUwzMVhGI6QKYA/view?usp=sharing",
+    // 
+    id: 1,
   },
   {
     title: "Pictogen",
@@ -30,17 +42,7 @@ export const projects = [
     visit: "https://mood-sync2.vercel.app/",  // Add a demo or video link here if available
     id: 2
   },
-  {
-    title: "Sell it Dude!",
-    description:
-      "Created a marketplace platform for college students to trade items seamlessly. Implemented secure authentication and dynamic product listings for better engagement and transaction efficiency. Promoted sustainability through eco-friendly practices and responsible exchange of goods.",
-    image: "/images/sid.png",
-    tags: ["NextJs", "ReactJs", "ExpressJs", "MongoDB"],
-    source: "https://github.com/akash768145s/sid",
-    visit:
-      "https://drive.google.com/file/d/1IlPL-jltEqBwFz_EYEcMiXcFZs7iGYXh/view?usp=sharing",
-    id: 1,
-  },
+
   {
     title: "EduGuage",
     description:
