@@ -5,38 +5,48 @@ const GlobalStyles = createGlobalStyle`
   ${normalize};
 
   @font-face {
-    font-family: 'Satoshi';
-    src: url('/fonts/Satoshi-Regular.otf') format('opentype');
+    font-family: 'Space Grotesk';
+    src: url('/fonts/Fonts/OTF/SpaceGrotesk-Regular.otf') format('opentype'),
+         url('/fonts/Fonts/WEB/fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
+         url('/fonts/Fonts/WEB/fonts/SpaceGrotesk-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'Satoshi';
-    src: url('/fonts/Satoshi-Medium.otf') format('opentype');
+    font-family: 'Space Grotesk';
+    src: url('/fonts/Fonts/OTF/SpaceGrotesk-Medium.otf') format('opentype'),
+         url('/fonts/Fonts/WEB/fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
+         url('/fonts/Fonts/WEB/fonts/SpaceGrotesk-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'Satoshi';
-    src: url('/fonts/Satoshi-Bold.otf') format('opentype');
+    font-family: 'Space Grotesk';
+    src: url('/fonts/Fonts/OTF/SpaceGrotesk-Bold.otf') format('opentype'),
+         url('/fonts/Fonts/WEB/fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+         url('/fonts/Fonts/WEB/fonts/SpaceGrotesk-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'Satoshi';
-    src: url('/fonts/Satoshi-Black.otf') format('opentype');
-    font-weight: 900;
+    font-family: 'Space Grotesk';
+    src: url('/fonts/Fonts/OTF/SpaceGrotesk-SemiBold.otf') format('opentype'),
+         url('/fonts/Fonts/WEB/fonts/SpaceGrotesk-SemiBold.woff2') format('woff2'),
+         url('/fonts/Fonts/WEB/fonts/SpaceGrotesk-SemiBold.woff') format('woff');
+    font-weight: 600;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'Satoshi';
-    src: url('/fonts/Satoshi-Italic.otf') format('opentype');
-    font-weight: 400;
-    font-style: italic;
+    font-family: 'Space Grotesk';
+    src: url('/fonts/Fonts/OTF/SpaceGrotesk-Light.otf') format('opentype'),
+         url('/fonts/Fonts/WEB/fonts/SpaceGrotesk-Light.woff2') format('woff2'),
+         url('/fonts/Fonts/WEB/fonts/SpaceGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
   }
 
   * {
@@ -50,7 +60,7 @@ const GlobalStyles = createGlobalStyle`
 
   }
   body {
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 1.6rem;
     background: ${props => props.theme.colors.background1};
     color: ${props => props.theme.colors.primary1};
@@ -58,7 +68,7 @@ const GlobalStyles = createGlobalStyle`
 
   }
   h1,h2,h3,h4,h5,h6,button {
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
   }
   a {
     text-decoration: none;

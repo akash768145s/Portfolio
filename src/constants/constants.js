@@ -22,6 +22,17 @@ export const projects = [
     id: 1,
   },
   {
+    title: "EduGuage",
+    description:
+      "Optimized academic performance tracking with detailed pass/fail analysis, CGPA/GPA calculations, and student rankings. Integrated Excel data into the web app via Firebase for enhanced insights, aiding educators and administrators in data-driven decision-making.",
+    image: "/images/snapit.jpg",
+    tags: ["NextJs", "ReactJs", "ExpressJs", "ChartJs", "Firebase"],
+    source: "https://github.com/akash768145s/Result-Analysis",
+    visit:
+      "https://drive.google.com/file/d/1ElZVuhOcLQMqyrZNwYERAhI5vPuRUV1M/view?usp=sharing",
+    id: 2,
+  },
+  {
     title: "Pictogen",
     description:
       "Accessibility-focused web application that converts text, speech, and images into simplified pictograms, creating visual communication aids for people with cognitive or language disabilities.",
@@ -43,17 +54,7 @@ export const projects = [
     id: 2
   },
 
-  {
-    title: "EduGuage",
-    description:
-      "Optimized academic performance tracking with detailed pass/fail analysis, CGPA/GPA calculations, and student rankings. Integrated Excel data into the web app via Firebase for enhanced insights, aiding educators and administrators in data-driven decision-making.",
-    image: "/images/snapit.jpg",
-    tags: ["NextJs", "ReactJs", "ExpressJs", "ChartJs", "Firebase"],
-    source: "https://github.com/akash768145s/Result-Analysis",
-    visit:
-      "https://drive.google.com/file/d/1ElZVuhOcLQMqyrZNwYERAhI5vPuRUV1M/view?usp=sharing",
-    id: 2,
-  },
+
   {
     title: "Stay Savvy",
     description:
