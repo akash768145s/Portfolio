@@ -3,9 +3,9 @@ import Image from "next/image";
 import React, { useCallback } from "react";
 import {
   AiFillGithub,
-  AiFillInstagram,
   AiFillLinkedin,
 } from "react-icons/ai";
+import { SiX } from "react-icons/si";
 import {
   Container,
   Div1,
@@ -67,8 +67,8 @@ const Header = () => {
         <SocialIcons href="https://www.linkedin.com/in/akash-sakthimurugan-352b26236/">
           <AiFillLinkedin size="3rem" />
         </SocialIcons>
-        <SocialIcons href="https://www.instagram.com/akash__2705s">
-          <AiFillInstagram size="3rem" />
+        <SocialIcons href="https://x.com/stackedakash">
+          <SiX size="2.5rem" />
         </SocialIcons>
       </Div3>
     </Container>
